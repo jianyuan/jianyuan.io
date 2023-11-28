@@ -1,6 +1,3 @@
-"use client";
-
-import { track } from "@vercel/analytics";
 import { Project } from "contentlayer/generated";
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -11,12 +8,6 @@ export default function ProjectCard({ project }: { project: Project }) {
         className="text-base font-semibold text-zinc-600 dark:text-zinc-400"
         target="_blank"
         rel="noreferrer"
-        onClick={() => {
-          track("click-project", {
-            title: project.title,
-            url: project.url,
-          });
-        }}
       >
         {project.title}
       </a>

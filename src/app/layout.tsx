@@ -1,9 +1,9 @@
 import "./globals.css";
 
-import { Analytics } from "@vercel/analytics/react";
 import localFont from "next/font/local";
 
 import { Footer } from "@/components/footer";
+import { GoogleAnalytics } from "@/components/ga";
 import { Header } from "@/components/header";
 import { Providers } from "@/components/providers";
 import { cn } from "@/utils/cn";
@@ -44,7 +44,12 @@ export default function RootLayout({
             <Footer />
           </div>
         </Providers>
-        <Analytics />
+
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics
+            measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
+          />
+        )}
       </body>
     </html>
   );

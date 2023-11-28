@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.1.1",
     "clsx": "^2.0.0",
     "contentlayer": "^0.3.4",
     "dayjs": "^1.11.10",
@@ -23,6 +22,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "@types/gtag.js": "^0.0.18",
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.17",
