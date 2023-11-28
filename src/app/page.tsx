@@ -1,3 +1,4 @@
+import { allPosts, allProjects } from "contentlayer/generated";
 import Link, { LinkProps } from "next/link";
 import {
   FaGithub,
@@ -8,6 +9,7 @@ import {
 } from "react-icons/fa";
 
 import { Container } from "@/components/container";
+import ProjectCard from "@/components/project-card";
 
 function SocialLink({
   icon: Icon,
@@ -25,15 +27,33 @@ export default function Home() {
     <Container className="mt-9">
       <div className="max-w-2xl space-y-6">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Jian Yuan LEE
+          Jian Yuan Lee
         </h1>
         <p className="text-base text-zinc-600 dark:text-zinc-400">
           Hi! I&rsquo;m a software designer, engineer, and entrepreneur based in
           London, UK.
         </p>
-        <p className="text-base text-zinc-600 dark:text-zinc-400">
-          This website is under construction 🚧.
-        </p>
+        {allPosts.map((post) => (
+          <div key={post._id}>
+            <h2 className="font-semibold">{post.title}</h2>
+            <div
+              className="text-base text-zinc-600 dark:text-zinc-400"
+              dangerouslySetInnerHTML={{ __html: post.body.html }}
+            />
+          </div>
+        ))}
+
+        <div>
+          <h2 className="font-semibold">Projects</h2>
+          <ul>
+            {allProjects.map((project) => (
+              <li key={project._id}>
+                <ProjectCard project={project} />
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div className="flex gap-6">
           <SocialLink
             href="https://twitter.com/jyuan"
