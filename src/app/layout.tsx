@@ -1,14 +1,18 @@
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/react";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Providers } from "@/components/providers";
 import { cn } from "@/utils/cn";
 
-const inter = Inter({ subsets: ["latin"] });
+const monaSans = localFont({
+  src: "../fonts/Mona-Sans.woff2",
+  display: "swap",
+  variable: "--font-mona-sans",
+});
 
 export const metadata = {
   title: "Jian Yuan Lee",
@@ -24,8 +28,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          inter.className,
-          "flex h-full flex-col bg-zinc-50 dark:bg-black"
+          monaSans.variable,
+          "font-sans flex h-full flex-col bg-zinc-50 dark:bg-black"
         )}
       >
         <Providers>
