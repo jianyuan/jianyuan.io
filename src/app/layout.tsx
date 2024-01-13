@@ -1,10 +1,12 @@
 import "./globals.css";
 
 import localFont from "next/font/local";
+import { Suspense } from "react";
 
 import { Footer } from "@/components/footer";
 import { GoogleAnalytics } from "@/components/ga";
 import { Header } from "@/components/header";
+import { PostHogPageView } from "@/components/posthog-page-view";
 import { Providers } from "@/components/providers";
 import { cn } from "@/utils/cn";
 
@@ -43,6 +45,9 @@ export default function RootLayout({
             <main>{children}</main>
             <Footer />
           </div>
+          <Suspense>
+            <PostHogPageView />
+          </Suspense>
         </Providers>
 
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
