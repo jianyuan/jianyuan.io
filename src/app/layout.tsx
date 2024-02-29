@@ -51,9 +51,11 @@ export default function RootLayout({
         </Providers>
 
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <GoogleAnalytics
-            measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
-          />
+          <Suspense>
+            <GoogleAnalytics
+              measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
+            />
+          </Suspense>
         )}
       </body>
     </html>

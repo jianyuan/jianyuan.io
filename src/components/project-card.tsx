@@ -1,4 +1,4 @@
-import { Project } from "contentlayer/generated";
+import { Project } from "#site/content";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       </a>
       <div
         className="text-base text-zinc-600 dark:text-zinc-400"
-        dangerouslySetInnerHTML={{ __html: project.body.html }}
+        dangerouslySetInnerHTML={{ __html: project.body }}
       />
     </div>
   );

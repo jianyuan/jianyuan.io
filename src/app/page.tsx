@@ -1,4 +1,3 @@
-import { allPosts, allProjects } from "contentlayer/generated";
 import { ComponentProps } from "react";
 import {
   FaGithub,
@@ -10,6 +9,7 @@ import {
 
 import { Container } from "@/components/container";
 import ProjectCard from "@/components/project-card";
+import { posts, projects } from "#site/content";
 
 function SocialLink({
   icon: Icon,
@@ -33,12 +33,12 @@ export default function Home() {
           Hi! I&rsquo;m a software designer, engineer, and entrepreneur based in
           London, UK.
         </p>
-        {allPosts.map((post) => (
-          <div key={post._id}>
+        {posts.map((post) => (
+          <div key={post.slug}>
             <h2 className="font-semibold">{post.title}</h2>
             <div
               className="text-base text-zinc-600 dark:text-zinc-400"
-              dangerouslySetInnerHTML={{ __html: post.body.html }}
+              dangerouslySetInnerHTML={{ __html: post.body }}
             />
           </div>
         ))}
@@ -46,8 +46,8 @@ export default function Home() {
         <div>
           <h2 className="font-semibold">Projects</h2>
           <ul>
-            {allProjects.map((project) => (
-              <li key={project._id}>
+            {projects.map((project) => (
+              <li key={project.slug}>
                 <ProjectCard project={project} />
               </li>
             ))}
