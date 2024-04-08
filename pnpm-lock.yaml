@@ -19,7 +19,7 @@ dependencies:
     version: 0.3.0(react-dom@18.2.0)(react@18.2.0)
   posthog-js:
     specifier: ^1.98.2
-    version: 1.119.0
+    version: 1.119.1
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -3448,8 +3448,8 @@ packages:
       source-map-js: 1.2.0
     dev: true
 
-  /posthog-js@1.119.0:
-    resolution: {integrity: sha512-Q51aBLovaGk36Ticy0y5uqamkwYEJU9a2RzbXEmIz1WxWlS6UBwUxxVUT+CBdrCWezGtl49Njcg6IQZq/pKcLw==}
+  /posthog-js@1.119.1:
+    resolution: {integrity: sha512-5+uLxrVvtACKHmluO6eY+5w51oCwwIrDbZFTToVsghk9mNhXG345r6qKHtXvVyvcCz7ogih1Pod0RDjqCknx3Q==}
     dependencies:
       fflate: 0.4.8
       preact: 10.20.1
