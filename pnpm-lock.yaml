@@ -71,8 +71,8 @@ devDependencies:
     specifier: ^5.3.2
     version: 5.4.4
   velite:
-    specifier: 0.1.0-beta.13
-    version: 0.1.0-beta.13
+    specifier: 0.1.0-beta.14
+    version: 0.1.0-beta.14
 
 packages:
 
@@ -3970,8 +3970,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /terser@5.29.2:
-    resolution: {integrity: sha512-ZiGkhUBIM+7LwkNjXYJq8svgkd+QK3UUr0wJqY4MieaezBSAIPgbSPZyIx0idM6XWK5CMzSWa8MJIzmRcB8Caw==}
+  /terser@5.30.3:
+    resolution: {integrity: sha512-STdUgOUx8rLbMGO9IOwHLpCqolkDITFFQSMYYwKE1N2lY6MVSaeoi10z/EhWxRc6ybqoVmKSkhKYH/XUpl7vSA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -4187,15 +4187,15 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /velite@0.1.0-beta.13:
-    resolution: {integrity: sha512-3IoMqFkBQNvmu0vZFe6sNpt48uy0G/tzidzU6ryds4EctPlY23jcFyup5eNQLiPN83Rwpls3KmMcJwlryEhsHw==}
+  /velite@0.1.0-beta.14:
+    resolution: {integrity: sha512-mJ3vKUPyU8UPB4IL1F8416eFZx/liZJgjq/L0m0tcb3EOb8y/DPjvJC5+Y3hrwr6sBJmoHF+4OFOFZcCwonKjw==}
     engines: {node: ^18.17.0 || >=20.3.0}
     hasBin: true
     dependencies:
       '@mdx-js/mdx': 3.0.1
       esbuild: 0.20.2
       sharp: 0.33.3
-      terser: 5.29.2
+      terser: 5.30.3
     transitivePeerDependencies:
       - supports-color
     dev: true
