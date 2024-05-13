@@ -17,10 +17,15 @@ class VeliteWebpackPlugin {
 const nextConfig = {
   rewrites: async () => [
     {
+      source: "/ingest/static/:path*",
+      destination: "https://us-assets.i.posthog.com/static/:path*",
+    },
+    {
       source: "/ingest/:path*",
-      destination: "https://app.posthog.com/:path*",
+      destination: "https://us.i.posthog.com/:path*",
     },
   ],
+  skipTrailingSlashRedirect: true,
   webpack: (config) => {
     config.plugins.push(new VeliteWebpackPlugin());
     return config;
