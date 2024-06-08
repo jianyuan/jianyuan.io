@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "lockFileMaintenance": {
     "enabled": true,
@@ -13,7 +13,14 @@
         "devDependencies"
       ],
       "matchPackagePrefixes": [
-        "@types/"
+        "@types/",
+        "eslint"
+      ],
+      "automerge": true
+    },
+    {
+      "matchPackageNames": [
+        "posthog-js"
       ],
       "automerge": true
     }
