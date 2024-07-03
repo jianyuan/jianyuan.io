@@ -22,7 +22,7 @@ importers:
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       posthog-js:
         specifier: ^1.98.2
-        version: 1.142.1
+        version: 1.143.0
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -1819,11 +1819,11 @@ packages:
     resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.142.1:
-    resolution: {integrity: sha512-yqeWTWitlb0sCaH5v6s7UJ+pPspzf/lkzPaSE5pMMXRM2i2KNsMoZEAZqbPCW8fQ8QL6lHs6d8PLjHrvbR288w==}
+  posthog-js@1.143.0:
+    resolution: {integrity: sha512-8OPMBxmyDZJ9eBcmVgKob5zHVHIm0oIvNYhbExztPbZLV1v/xeCKeytZsH61w6F/Ey7WGb4RdvP6rwomv1MajA==}
 
-  preact@10.22.0:
-    resolution: {integrity: sha512-RRurnSjJPj4rp5K6XoP45Ui33ncb7e4H7WiOHVpjbkvqvA3U+N8Z6Qbo0AE6leGYBV66n8EhEaFixvIu3SkxFw==}
+  preact@10.22.1:
+    resolution: {integrity: sha512-jRYbDDgMpIb5LHq3hkI0bbl+l/TQ9UnkdQ0ww+lp+4MMOdqaUYdFc5qeyP+IV8FAd/2Em7drVPeKdQxsiWCf/A==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -4330,13 +4330,13 @@ snapshots:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
-  posthog-js@1.142.1:
+  posthog-js@1.143.0:
     dependencies:
       fflate: 0.4.8
-      preact: 10.22.0
+      preact: 10.22.1
       web-vitals: 4.2.1
 
-  preact@10.22.0: {}
+  preact@10.22.1: {}
 
   prelude-ls@1.2.1: {}
 
