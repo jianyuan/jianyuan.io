@@ -43,9 +43,9 @@ export default function Home() {
           </div>
         ))}
 
-        <div>
+        <div className="space-y-2">
           <h2 className="font-semibold">Projects</h2>
-          <ul>
+          <ul className="space-y-2">
             {projects.map((project) => (
               <li key={project.slug}>
                 <ProjectCard project={project} />
