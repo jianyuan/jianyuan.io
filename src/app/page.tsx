@@ -33,7 +33,7 @@ export default function Home() {
           Hi! I&rsquo;m a software designer, engineer, and entrepreneur based in
           London, UK.
         </p>
-        {posts.map((post) => (
+        {/* {posts.map((post) => (
           <div key={post.slug}>
             <h2 className="font-semibold">{post.title}</h2>
             <div
@@ -41,11 +41,11 @@ export default function Home() {
               dangerouslySetInnerHTML={{ __html: post.body }}
             />
           </div>
-        ))}
+        ))} */}
 
-        <div className="space-y-2">
-          <h2 className="font-semibold">Projects</h2>
-          <ul className="space-y-2">
+        <div className="space-y-4">
+          <h2 className="font-semibold text-xl">Projects</h2>
+          <ul className="space-y-6">
             {projects.map((project) => (
               <li key={project.slug}>
                 <ProjectCard project={project} />
