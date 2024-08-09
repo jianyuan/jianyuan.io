@@ -22,7 +22,7 @@ importers:
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       posthog-js:
         specifier: ^1.98.2
-        version: 1.154.5
+        version: 1.154.6
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -1811,8 +1811,8 @@ packages:
     resolution: {integrity: sha512-YF2kKIUzAofPMpfH6hOi2cGnv/HrUlfucspc7pDyvv7kGdqXrfj8SCl/t8owkEgKEuu8ZcRjSOxFxVLqwChZ2Q==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.154.5:
-    resolution: {integrity: sha512-YYhWckDIRObfCrQpiLq+fdcDTIbQp8ebiKi0ueGohMRgugIG9LJVSpBgCeCHZm2C7sOxDUNcAr3T5VBDUSQoOg==}
+  posthog-js@1.154.6:
+    resolution: {integrity: sha512-8dA9xRex27cIbtSKwxNEvx+khGO+arlwfwyfD/TKuoc0TI5mFAXwtgxE45nnWFnP2hZ4CUCv2WMifLudIqJvcw==}
 
   preact@10.23.1:
     resolution: {integrity: sha512-O5UdRsNh4vdZaTieWe3XOgSpdMAmkIYBCT3VhQDlKrzyCm8lUYsk0fmVEvoQQifoOjFRTaHZO69ylrzTW2BH+A==}
@@ -2188,8 +2188,8 @@ packages:
   vfile@6.0.2:
     resolution: {integrity: sha512-zND7NlS8rJYb/sPqkb13ZvbbUoExdbi4w3SfRrMq6R3FvnLQmmfpajJNITuuYm6AZ5uao9vy4BAos3EXBPf2rg==}
 
-  web-vitals@4.2.2:
-    resolution: {integrity: sha512-nYfoOqb4EmElljyXU2qdeE76KsvoHdftQKY4DzA9Aw8DervCg2bG634pHLrJ/d6+B4mE3nWTSJv8Mo7B2mbZkw==}
+  web-vitals@4.2.3:
+    resolution: {integrity: sha512-/CFAm1mNxSmOj6i0Co+iGFJ58OS4NRGVP+AWS/l509uIK5a1bSoIVaHz/ZumpHTfHSZBpgrJ+wjfpAOrTHok5Q==}
 
   which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
@@ -4309,11 +4309,11 @@ snapshots:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
-  posthog-js@1.154.5:
+  posthog-js@1.154.6:
     dependencies:
       fflate: 0.4.8
       preact: 10.23.1
-      web-vitals: 4.2.2
+      web-vitals: 4.2.3
 
   preact@10.23.1: {}
 
@@ -4815,7 +4815,7 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  web-vitals@4.2.2: {}
+  web-vitals@4.2.3: {}
 
   which-boxed-primitive@1.0.2:
     dependencies:
