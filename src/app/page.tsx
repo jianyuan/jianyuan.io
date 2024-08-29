@@ -8,8 +8,9 @@ import {
 } from "react-icons/fa";
 
 import { Container } from "@/components/container";
-import ProjectCard from "@/components/project-card";
-import { posts, projects } from "#site/content";
+import { ProjectCard } from "@/components/project-card";
+import { posts, projects, videos } from "#site/content";
+import { VideoCard } from "@/components/video-card";
 
 function SocialLink({
   icon: Icon,
@@ -24,8 +25,8 @@ function SocialLink({
 
 export default function Home() {
   return (
-    <Container className="mt-9">
-      <div className="max-w-2xl space-y-6">
+    <Container className="my-9">
+      <div className="max-w-2xl space-y-10">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Jian Yuan Lee
         </h1>
@@ -33,26 +34,6 @@ export default function Home() {
           Hi! I&rsquo;m a software designer, engineer, and entrepreneur based in
           London, UK.
         </p>
-        {/* {posts.map((post) => (
-          <div key={post.slug}>
-            <h2 className="font-semibold">{post.title}</h2>
-            <div
-              className="text-base text-zinc-600 dark:text-zinc-400"
-              dangerouslySetInnerHTML={{ __html: post.body }}
-            />
-          </div>
-        ))} */}
-
-        <div className="space-y-4">
-          <h2 className="font-semibold text-xl">Projects</h2>
-          <ul className="space-y-6">
-            {projects.map((project) => (
-              <li key={project.slug}>
-                <ProjectCard project={project} />
-              </li>
-            ))}
-          </ul>
-        </div>
 
         <div className="flex gap-6">
           <SocialLink
@@ -80,6 +61,36 @@ export default function Home() {
             aria-label="Follow on Instagram"
             icon={FaInstagram}
           />
+        </div>
+
+        {/* {posts.map((post) => (
+          <div key={post.slug}>
+            <h2 className="font-semibold">{post.title}</h2>
+            <div
+              className="text-base text-zinc-600 dark:text-zinc-400"
+              dangerouslySetInnerHTML={{ __html: post.body }}
+            />
+          </div>
+        ))} */}
+
+        <div className="space-y-4">
+          <h2 className="font-semibold text-xl">Projects</h2>
+          <ul className="space-y-6">
+            {projects.map((project) => (
+              <li key={project.slug}>
+                <ProjectCard project={project} />
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="font-semibold text-xl">Videos</h2>
+          <div className="space-y-6">
+            {videos.map((video) => (
+              <VideoCard key={video.slug} video={video} />
+            ))}
+          </div>
         </div>
       </div>
     </Container>

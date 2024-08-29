@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import { defineConfig, s } from "velite";
 
 function slugify(input: string) {
@@ -44,6 +45,24 @@ export default defineConfig({
           title: s.string(),
           slug: s.string().optional(),
           url: s.string().url(),
+          body: s.markdown(),
+        })
+        .transform((data) => {
+          const slug = data.slug || slugify(data.title);
+          return {
+            ...data,
+            slug,
+          };
+        }),
+    },
+    videos: {
+      name: "Video",
+      pattern: "videos/*.md",
+      schema: s
+        .object({
+          title: s.string(),
+          slug: s.string().optional(),
+          youtube_id: s.string().optional(),
           body: s.markdown(),
         })
         .transform((data) => {

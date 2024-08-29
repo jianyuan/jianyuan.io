@@ -1,6 +1,6 @@
 import { Project } from "#site/content";
 
-export default function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project }: { project: Project }) {
   return (
     <a
       href={project.url}
