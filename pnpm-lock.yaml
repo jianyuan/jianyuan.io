@@ -44,7 +44,7 @@ importers:
         version: 0.0.20
       '@types/node':
         specifier: ^20
-        version: 20.16.13
+        version: 20.16.14
       '@types/react':
         specifier: ^18
         version: 18.3.11
@@ -542,8 +542,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@20.16.13':
-    resolution: {integrity: sha512-GjQ7im10B0labo8ZGXDGROUl9k0BNyDgzfGpb4g/cl+4yYDWVKcozANF4FGr4/p0O/rAkQClM6Wiwkije++1Tg==}
+  '@types/node@20.16.14':
+    resolution: {integrity: sha512-vtgGzjxLF7QT88qRHtXMzCWpAAmwonE7fwgVjFtXosUva2oSpnIEc3gNO9P7uIfOxKnii2f79/xtOnfreYtDaA==}
 
   '@types/prop-types@15.7.13':
     resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
@@ -2654,7 +2654,7 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@20.16.13':
+  '@types/node@20.16.14':
     dependencies:
       undici-types: 6.19.8
 
