@@ -1,4 +1,5 @@
 import { ComponentProps } from "react";
+import { IconType } from "react-icons";
 import {
   FaGithub,
   FaInstagram,
@@ -9,13 +10,13 @@ import {
 
 import { Container } from "@/components/container";
 import { ProjectCard } from "@/components/project-card";
-import { posts, projects, videos } from "#site/content";
 import { VideoCard } from "@/components/video-card";
+import { projects, videos } from "#site/content";
 
 function SocialLink({
   icon: Icon,
   ...props
-}: { icon: React.FC<any> } & ComponentProps<"a">) {
+}: { icon: IconType } & ComponentProps<"a">) {
   return (
     <a className="group -m-1 p-1" target="_blank" rel="noreferrer" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
