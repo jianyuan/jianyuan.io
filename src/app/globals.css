@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tabler-icon {
+  @apply inline-block;
+}

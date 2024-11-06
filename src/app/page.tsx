@@ -1,12 +1,11 @@
-import { ComponentProps } from "react";
 import { IconType } from "react-icons";
 import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+  SiGithub,
+  SiInstagram,
+  SiLinkedin,
+  SiX,
+  SiYoutube,
+} from "react-icons/si";
 
 import { Container } from "@/components/container";
 import { ProjectCard } from "@/components/project-card";
@@ -16,7 +15,7 @@ import { projects, videos } from "#site/content";
 function SocialLink({
   icon: Icon,
   ...props
-}: { icon: IconType } & ComponentProps<"a">) {
+}: { icon: IconType } & React.ComponentProps<"a">) {
   return (
     <a className="group -m-1 p-1" target="_blank" rel="noreferrer" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
@@ -40,27 +39,27 @@ export default function Home() {
           <SocialLink
             href="https://twitter.com/jyuan"
             aria-label="Follow on Twitter"
-            icon={FaTwitter}
+            icon={SiX}
           />
           <SocialLink
             href="https://github.com/jianyuan"
             aria-label="Follow on GitHub"
-            icon={FaGithub}
+            icon={SiGithub}
           />
           <SocialLink
             href="https://www.linkedin.com/in/jianyuanlee/"
             aria-label="Follow on LinkedIn"
-            icon={FaLinkedin}
+            icon={SiLinkedin}
           />
           <SocialLink
             href="https://www.youtube.com/@jianyuanlee"
             aria-label="Follow on YouTube"
-            icon={FaYoutube}
+            icon={SiYoutube}
           />
           <SocialLink
             href="https://instagram.com/jianyuan/"
             aria-label="Follow on Instagram"
-            icon={FaInstagram}
+            icon={SiInstagram}
           />
         </div>
 

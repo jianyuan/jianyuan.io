@@ -1,5 +1,7 @@
 import { Project } from "#site/content";
 
+import { MdxContent } from "./mdx-content";
+
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <a
@@ -9,10 +11,9 @@ export function ProjectCard({ project }: { project: Project }) {
       rel="noreferrer"
     >
       <div className="font-semibold">{project.title}</div>
-      <div
-        className="text-sm"
-        dangerouslySetInnerHTML={{ __html: project.body }}
-      />
+      <div className="text-sm">
+        <MdxContent code={project.body} />
+      </div>
     </a>
   );
 }
