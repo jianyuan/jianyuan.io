@@ -1,10 +1,11 @@
 import React from "react";
 import * as runtime from "react/jsx-runtime";
-import { SiOpenai, SiSentry } from "react-icons/si";
+import { SiAnthropic, SiOpenai, SiSentry } from "react-icons/si";
 
 import { InlineIcon } from "./ui/inline-icon";
 
 const sharedComponents = {
+  SiAnthropic: () => <InlineIcon icon={SiAnthropic} />,
   SiOpenai: () => <InlineIcon icon={SiOpenai} />,
   SiSentry: () => <InlineIcon icon={SiSentry} />,
 };
