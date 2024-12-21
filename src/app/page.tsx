@@ -75,7 +75,7 @@ export default function Home() {
 
         <div className="space-y-4">
           <h2 className="font-semibold text-xl">Projects</h2>
-          <ul className="space-y-6">
+          <ul className="gap-6 grid md:grid-cols-2">
             {projects.map((project) => (
               <li key={project.slug}>
                 <ProjectCard project={project} />
