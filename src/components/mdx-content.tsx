@@ -1,14 +1,10 @@
 import React from "react";
 import * as runtime from "react/jsx-runtime";
-import { SiAnthropic, SiOpenai, SiPorkbun, SiSentry } from "react-icons/si";
 
-import { InlineIcon } from "./ui/inline-icon";
+import { BrandIcon } from "./ui/brand-icon";
 
 const sharedComponents = {
-  SiAnthropic: () => <InlineIcon icon={SiAnthropic} />,
-  SiOpenai: () => <InlineIcon icon={SiOpenai} />,
-  SiPorkbun: () => <InlineIcon icon={SiPorkbun} />,
-  SiSentry: () => <InlineIcon icon={SiSentry} />,
+  BrandIcon,
 };
 
 function useMdxComponent(code: string) {

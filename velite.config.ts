@@ -1,3 +1,4 @@
+import { brands } from "@/lib/brands";
 import { defineConfig, s } from "velite";
 
 function slugify(input: string) {
@@ -43,6 +44,7 @@ export default defineConfig({
         .object({
           title: s.string(),
           slug: s.string().optional(),
+          technologies: s.array(s.enum([brands[0], ...brands.slice(1)])),
           url: s.string().url(),
           body: s.mdx(),
         })

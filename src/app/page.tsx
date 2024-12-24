@@ -27,10 +27,10 @@ export default function Home() {
   return (
     <Container className="my-9">
       <div className="max-w-2xl space-y-10">
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        <h1 className="font-medium tracking-tight text-zinc-800 dark:text-zinc-100 text-lg">
           Jian Yuan Lee
         </h1>
-        <p className="text-base text-zinc-600 dark:text-zinc-400">
+        <p className="text-sm text-muted">
           Hi! I&rsquo;m a software designer, engineer, and entrepreneur based in
           London, UK.
         </p>
@@ -74,18 +74,16 @@ export default function Home() {
         ))} */}
 
         <div className="space-y-4">
-          <h2 className="font-semibold text-xl">Projects</h2>
-          <ul className="gap-6 grid md:grid-cols-2">
+          <h2 className="font-semibold text-md">Projects</h2>
+          <div className="gap-y-4 gap-x-12 grid md:grid-cols-2 auto-rows-fr">
             {projects.map((project) => (
-              <li key={project.slug}>
-                <ProjectCard project={project} />
-              </li>
+              <ProjectCard key={project.slug} project={project} />
             ))}
-          </ul>
+          </div>
         </div>
 
         <div className="space-y-4">
-          <h2 className="font-semibold text-xl">Videos</h2>
+          <h2 className="font-semibold text-md">Videos</h2>
           <div className="space-y-6">
             {videos.map((video) => (
               <VideoCard key={video.slug} video={video} />
