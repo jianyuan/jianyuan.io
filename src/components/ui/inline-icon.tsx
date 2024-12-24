@@ -10,7 +10,7 @@ export function InlineIcon({
   return (
     <Icon
       {...props}
-      className={cn("inline align-text-middle mb-1", className)}
+      className={cn("align-text-middle mb-1 inline", className)}
     />
   );
 }

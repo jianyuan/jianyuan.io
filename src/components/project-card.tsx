@@ -7,12 +7,12 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <a
       href={project.url}
-      className="space-y-1 group transition flex flex-col py-1"
+      className="group flex flex-col space-y-1 py-1 transition"
       target="_blank"
       rel="noreferrer"
     >
       <div className="flex items-center gap-2">
-        <div className="font-semibold text-sm group-hover:underline">
+        <div className="text-sm font-semibold group-hover:underline">
           {project.title}
         </div>
         <span className="h-px flex-1 bg-zinc-300 dark:bg-zinc-700" />

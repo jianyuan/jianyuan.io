@@ -27,10 +27,10 @@ export default function Home() {
   return (
     <Container className="my-9">
       <div className="max-w-2xl space-y-10">
-        <h1 className="font-medium tracking-tight text-zinc-800 dark:text-zinc-100 text-lg">
+        <h1 className="text-lg font-medium tracking-tight text-zinc-800 dark:text-zinc-100">
           Jian Yuan Lee
         </h1>
-        <p className="text-sm text-muted">
+        <p className="text-muted text-sm">
           Hi! I&rsquo;m a software designer, engineer, and entrepreneur based in
           London, UK.
         </p>
@@ -74,8 +74,8 @@ export default function Home() {
         ))} */}
 
         <div className="space-y-4">
-          <h2 className="font-semibold text-md">Projects</h2>
-          <div className="gap-y-4 gap-x-12 grid md:grid-cols-2 auto-rows-fr">
+          <h2 className="text-md font-semibold">Projects</h2>
+          <div className="grid auto-rows-fr gap-x-12 gap-y-4 md:grid-cols-2">
             {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
 
         <div className="space-y-4">
-          <h2 className="font-semibold text-md">Videos</h2>
+          <h2 className="text-md font-semibold">Videos</h2>
           <div className="space-y-6">
             {videos.map((video) => (
               <VideoCard key={video.slug} video={video} />
