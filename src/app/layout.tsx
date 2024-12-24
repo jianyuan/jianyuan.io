@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import localFont from "next/font/local";
+import { Geist, Geist_Mono } from "next/font/google";
 import React from "react";
 
 import { GoogleAnalytics } from "@/components/analytics/ga";
@@ -10,10 +10,14 @@ import { Header } from "@/components/header";
 import { Providers } from "@/components/providers";
 import { cn } from "@/utils/cn";
 
-const monaSans = localFont({
-  src: "../fonts/Mona-Sans.woff2",
-  display: "swap",
-  variable: "--font-mona-sans",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -27,13 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          monaSans.variable,
-          "font-sans flex h-full flex-col bg-zinc-50 dark:bg-black"
-        )}
-      >
+    <html
+      lang="en"
+      className={cn(geistSans.variable, geistMono.variable, "antialiased")}
+      suppressHydrationWarning
+    >
+      <body className="font-sans flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="fixed inset-0 flex justify-center sm:px-8">
             <div className="flex w-full max-w-7xl lg:px-8">
