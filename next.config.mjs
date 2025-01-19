@@ -25,6 +25,17 @@ const nextConfig = {
       destination: "https://us.i.posthog.com/:path*",
     },
   ],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ucarecdn.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+    loader: "custom",
+  },
   skipTrailingSlashRedirect: true,
   webpack: (config) => {
     config.plugins.push(new VeliteWebpackPlugin());

@@ -1,7 +1,7 @@
 import { brandIcons } from "@/lib/brands";
 import { Project } from "#site/content";
 
-import { MdxContent } from "./mdx-content";
+import { MdxContent } from "../mdx-content";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (

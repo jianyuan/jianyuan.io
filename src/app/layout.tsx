@@ -45,7 +45,7 @@ export default function RootLayout({
           </div>
           <div className="relative">
             <Header />
-            <main>{children}</main>
+            {children}
             <Footer />
           </div>
           <React.Suspense>

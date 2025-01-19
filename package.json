@@ -10,6 +10,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@uploadcare/nextjs-loader": "^1.0.0",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",
     "next": "^15.0.0",
