@@ -25,7 +25,7 @@ const photos = defineCollection({
 
 const posts = defineCollection({
   name: "Post",
-  pattern: "posts/*.md",
+  pattern: "posts/*.{md,mdx}",
   schema: s
     .object({
       title: s.string(),
