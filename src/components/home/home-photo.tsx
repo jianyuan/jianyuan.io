@@ -19,7 +19,7 @@ export function HomePhoto({
     <div
       {...props}
       className={cn(
-        "relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 sm:w-72 sm:rounded-2xl",
+        "relative aspect-9/10 w-44 flex-none overflow-hidden rounded-xl bg-gray-100 sm:w-72 sm:rounded-2xl dark:bg-gray-800",
         className,
       )}
     >

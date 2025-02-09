@@ -7,7 +7,7 @@ export function Header() {
     <>
       <header className="pointer-events-none relative z-50 flex flex-col">
         <div className="top-0 z-10 h-16 pt-6">
-          <Container className="top-[var(--header-top,theme(spacing.6))] w-full">
+          <Container className="top-(--header-top,--spacing(6)) w-full">
             <div className="relative flex gap-4">
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
