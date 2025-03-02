@@ -25,7 +25,7 @@ importers:
         version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       posthog-js:
         specifier: ^1.98.2
-        version: 1.224.1(@rrweb/types@2.0.0-alpha.17)
+        version: 1.225.0(@rrweb/types@2.0.0-alpha.17)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -875,8 +875,8 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  core-js@3.40.0:
-    resolution: {integrity: sha512-7vsMc/Lty6AGnn7uFpYT56QesI5D2Y/UkgKounk87OP9Z2H9Z8kj6jzcSGAxFmUtDOS0ntK6lbQz+Nsa0Jj6mQ==}
+  core-js@3.41.0:
+    resolution: {integrity: sha512-SJ4/EHwS36QMJd6h/Rg+GyR4A5xE0FSI3eZ+iBVpfqf1x0eTSg1smWLHrA+2jQThZSh97fmSgFSU8B61nxosxA==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -1850,13 +1850,13 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.224.1:
-    resolution: {integrity: sha512-C/0adjCiqvJ9JlGdlBT7HyxqBbMB8wFwb7/DKULyXfT4GJX/8ETaqXaJuSL3HLcuUJjxYPqDinBC6mt8QoVYnA==}
+  posthog-js@1.225.0:
+    resolution: {integrity: sha512-pJY8zz7+QKNvx/SquqYHCg1IHrq/ubstnQ44VcWxdbvKZuuxL6XFTQeDhQryE1SIP6qzK3wzRvr5OYSKwjQP6Q==}
     peerDependencies:
       '@rrweb/types': 2.0.0-alpha.17
 
-  preact@10.26.3:
-    resolution: {integrity: sha512-OJCfNTdttkOTCbTN+gCnXn/woDqz1dIjvP+gdCoYGP2kKuX6w79FAP8qgY/r7jgAunvqHVVmEOKzKOFWzrXZdw==}
+  preact@10.26.4:
+    resolution: {integrity: sha512-KJhO7LBFTjP71d83trW+Ilnjbo+ySsaAgCfXOXUlmGzJ4ygYPWmysm77yg4emwfmoz3b22yvH5IsVFHbhUaH5w==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -3018,7 +3018,7 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  core-js@3.40.0: {}
+  core-js@3.41.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -4399,15 +4399,15 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-js@1.224.1(@rrweb/types@2.0.0-alpha.17):
+  posthog-js@1.225.0(@rrweb/types@2.0.0-alpha.17):
     dependencies:
       '@rrweb/types': 2.0.0-alpha.17
-      core-js: 3.40.0
+      core-js: 3.41.0
       fflate: 0.4.8
-      preact: 10.26.3
+      preact: 10.26.4
       web-vitals: 4.2.4
 
-  preact@10.26.3: {}
+  preact@10.26.4: {}
 
   prelude-ls@1.2.1: {}
 
