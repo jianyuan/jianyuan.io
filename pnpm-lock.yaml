@@ -25,7 +25,7 @@ importers:
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       posthog-js:
         specifier: ^1.98.2
-        version: 1.236.0
+        version: 1.236.1
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -2049,8 +2049,8 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.236.0:
-    resolution: {integrity: sha512-tTKBu/ZHVfBHAvpHhLQX+8WfNWr1q4r2fZmySBYJPR+pK+HQtSwvjHCibaH6ukK38HphLCqc48YTbQGUbZn7Nw==}
+  posthog-js@1.236.1:
+    resolution: {integrity: sha512-my3MGaQfBO4FOL0RAW2mCxDkivCyt8KOenYrbeES5D5wh3SQGy0OhDH3boTKO6b6dchsAjieqtOGoRFomKXZ+A==}
     peerDependencies:
       '@rrweb/types': 2.0.0-alpha.17
       rrweb-snapshot: 2.0.0-alpha.17
@@ -4759,7 +4759,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-js@1.236.0:
+  posthog-js@1.236.1:
     dependencies:
       core-js: 3.41.0
       fflate: 0.4.8
