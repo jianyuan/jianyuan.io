@@ -25,7 +25,7 @@ importers:
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       posthog-js:
         specifier: ^1.98.2
-        version: 1.240.1
+        version: 1.240.4
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -50,7 +50,7 @@ importers:
         version: 0.0.20
       '@types/node':
         specifier: ^22.0.0
-        version: 22.15.14
+        version: 22.15.15
       '@types/react':
         specifier: ^19.0.0
         version: 19.1.3
@@ -765,8 +765,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@22.15.14':
-    resolution: {integrity: sha512-BL1eyu/XWsFGTtDWOYULQEs4KR0qdtYfCxYAUYRoB7JP7h9ETYLgQTww6kH8Sj2C0pFGgrpM0XKv6/kbIzYJ1g==}
+  '@types/node@22.15.15':
+    resolution: {integrity: sha512-R5muMcZob3/Jjchn5LcO8jdKwSCbzqmPB6ruBxMcf9kbxtniZHP327s6C37iOfuw8mbKK3cAQa7sEl7afLrQ8A==}
 
   '@types/react-dom@19.1.3':
     resolution: {integrity: sha512-rJXC08OG0h3W6wDMFxQrZF00Kq6qQvw0djHRdzl3U5DnIERz0MRce3WVc7IS6JYBwtaP/DwYtRRjVlvivNveKg==}
@@ -2208,8 +2208,8 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.240.1:
-    resolution: {integrity: sha512-9pO1SefQCbq4Uvs27dq1U6xhEc+egG6aQvkOkgJdMUoiYuzkQ5+l2i0Ot/Gzigt8p0hjE0o0G2eRIi4SNmozbA==}
+  posthog-js@1.240.4:
+    resolution: {integrity: sha512-Qjm2H3FIWlC8RFxD3XSDluqhDzFCgwbAjnJzcxEIqOQafvqsoj1LqstgB4cyfeSdv8CSGEnjiGqgF5LITlKk0Q==}
     peerDependencies:
       '@rrweb/types': 2.0.0-alpha.17
       rrweb-snapshot: 2.0.0-alpha.17
@@ -3285,7 +3285,7 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@22.15.14':
+  '@types/node@22.15.15':
     dependencies:
       undici-types: 6.21.0
 
@@ -5155,7 +5155,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-js@1.240.1:
+  posthog-js@1.240.4:
     dependencies:
       core-js: 3.42.0
       fflate: 0.4.8
