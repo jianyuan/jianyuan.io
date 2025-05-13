@@ -25,7 +25,7 @@ importers:
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       posthog-js:
         specifier: ^1.98.2
-        version: 1.241.1
+        version: 1.242.0
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -56,7 +56,7 @@ importers:
         version: 19.1.4
       '@types/react-dom':
         specifier: ^19.0.0
-        version: 19.1.4(@types/react@19.1.4)
+        version: 19.1.5(@types/react@19.1.4)
       eslint:
         specifier: ^9.0.0
         version: 9.26.0(jiti@2.4.2)
@@ -776,8 +776,8 @@ packages:
   '@types/node@22.15.17':
     resolution: {integrity: sha512-wIX2aSZL5FE+MR0JlvF87BNVrtFWf6AE6rxSE9X7OwnVvoyCQjpzSRJ+M87se/4QCkCiebQAqrJ0y6fwIyi7nw==}
 
-  '@types/react-dom@19.1.4':
-    resolution: {integrity: sha512-WxYAszDYgsMV31OVyoG4jbAgJI1Gw0Xq9V19zwhy6+hUUJlJIdZ3r/cbdmTqFv++SktQkZ/X+46yGFxp5XJBEg==}
+  '@types/react-dom@19.1.5':
+    resolution: {integrity: sha512-CMCjrWucUBZvohgZxkjd6S9h0nZxXjzus6yDfUb+xLxYM7VvjKNH1tQrE9GWLql1XoOP4/Ds3bwFqShHUYraGg==}
     peerDependencies:
       '@types/react': ^19.0.0
 
@@ -2236,8 +2236,8 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.241.1:
-    resolution: {integrity: sha512-FJroX5kcz+twkYB8j/c+gHtuctjjAYX1EyopTG4bVZ+K5pQ/o7RCIlvUcCok1MZgDLiBrP/PnG0FkzUlMs19qQ==}
+  posthog-js@1.242.0:
+    resolution: {integrity: sha512-8R9tv+CmrdYPdBn9KD+UNT4dJsIvNTvFlDoIsaROHl4CRptaHxlOucq6JuPNhlzILTD8tGvkG8MG5Hzd6mo4fw==}
     peerDependencies:
       '@rrweb/types': 2.0.0-alpha.17
       rrweb-snapshot: 2.0.0-alpha.17
@@ -3340,7 +3340,7 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/react-dom@19.1.4(@types/react@19.1.4)':
+  '@types/react-dom@19.1.5(@types/react@19.1.4)':
     dependencies:
       '@types/react': 19.1.4
 
@@ -5220,7 +5220,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-js@1.241.1:
+  posthog-js@1.242.0:
     dependencies:
       core-js: 3.42.0
       fflate: 0.4.8
